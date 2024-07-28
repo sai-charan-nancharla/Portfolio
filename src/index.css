@@ -167,3 +167,29 @@
 		border-radius: 50%;
 	}
 }
+
+.skills{
+	transition: 1s ease;
+}
+.skills:hover{
+	transform: scale(1.1);
+}
+.resume{
+	transition: 1s ease;
+}
+.resume:hover{
+	transform: scale(1.1);
+}
+.pt-4{
+	background-color: rgba(105, 105, 105, 0.126);
+	
+}
+
+.pp{
+	transition: 1s ease;
+	transform: scale(0.7);
+}
+
+.pp:hover{
+	transform: scale(1.0);
+}

@@ -1,17 +1,20 @@
 
 import React from "react";
-import vpn from '../assets/vpn.png'
-import copeople from '../assets/copeople.png'
+import imag from '../assets/imag.png'
+import newsapp from '../assets/newsapp.png'
 import Footer from './Footer'
-
+import "../index.css"
+import "../App.css"
 const ProjectCard = ({ image, title, description, git, technologies }) => {
     return (
+        
+       
         <div className="max-w-sm sm:max-w-sm md:max-w-sm bg-gray-900 border border-neutral-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            {title=='Snap Shot' && <a href="#">
-                <img className="w-full rounded-t-lg h-auto object-cover " src={vpn} alt="" />
+            {title=='Image Enhancement using GAN' && <a href="#">
+                <img className="w-full rounded-t-lg h-auto object-cover " src={imag} alt="" />
             </a>}
-            {title=='Co People' && <a href="#">
-                <img className="w-full rounded-t-lg h-auto object-cover " src={copeople} alt="" />
+            {title=='News App' && <a href="#">
+                <img className="w-full rounded-t-lg h-auto object-cover " src={newsapp} alt="" />
             </a>}
             <div className="p-4 sm:p-6">
                 <a href="#">
@@ -33,14 +36,20 @@ const ProjectCard = ({ image, title, description, git, technologies }) => {
                 <a href={git} className="text-red-300 border border-gray-200 rounded-lg shadow p-1 sm:p-2 lg:p-3 hover:text-green-500 duration-300">GitHub</a>
             </div>
         </div>
+        
+        
     );
 };
   
 const Projects = () => {
     return (
-        <div className="bg-black">
+        
+        <div className="bg-black" id="projcard">
+        
             <div className="flex flex-wrap gap-7 justify-center items-center m-12 p-12">
+               
                 {project.map((item, index) => (
+                    <div className="pp">
                     <ProjectCard
                         key={index}
                         image={item.image}
@@ -50,28 +59,30 @@ const Projects = () => {
                         git={item.git}
                         technologies={item.technologies}
                     />
+                    </div>
                 ))}
             </div>
             <Footer/>
         </div>
+        
     );
 }
 
 
 export const project = [
     {
-        title:'Co People',
-        description:'Co People is a dynamic web application I crafted using React, Node JS and React. This project is a modern and engaging social platform that allows users to connect, share content and interact seamlessly.',
-        image: {vpn},
-        git:'https://github.com/nithingooud/CoPeople',
-        technologies:['MongoDb' ,'ReactJS' , 'NodeJS']
+        title:'Image Enhancement using GAN',
+        description:' This is web-application that enhances the degraded photographs by enhancing the pixels in the image, low quality images are transformed into high resolution images',
+        image: {imag},
+        git:'https://github.com/sai-charan-nancharla/Image-Enhancement',
+        technologies:['Python' ,'Streamlit' , 'Machine-learning']
     },
     {
-        title:'Snap Shot',
-        description:'SnapShot is a stunning portfolio that I exclusively designed using React JS and tailwind CSS.This Project serves as a representation of a photographer’s work, highlighting their portfolio and services.',
-        image: {copeople},
-        git:"https://github.com/nithingooud/vpn_studios",
-        technologies:[ 'React JS', 'tailwind CSS']
+        title:'News App',
+        description:'A news app utilizing APIs aggregates real-time news articles from various sources, offering users personalized content based on their preferences and interests.',
+        image: {newsapp},
+        git:"https://github.com/sai-charan-nancharla/News_App",
+        technologies:[ 'React JS', 'Node Js', 'MongoDB', 'BootStrap']
     }
 ]
 
