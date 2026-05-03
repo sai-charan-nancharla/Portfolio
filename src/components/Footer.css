@@ -1,0 +1,6 @@
+.footer{
+    position: relative;  /* Use relative positioning */
+    margin-left: 25%;     /* Center horizontally if needed */
+    bottom: 0;          /* Align to the bottom of its container */
+    text-align: center; /* Center text */
+}

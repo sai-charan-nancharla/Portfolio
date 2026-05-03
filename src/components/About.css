@@ -1,0 +1,147 @@
+.container{
+    margin:100px 100px 100px 100px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.firstcont{
+    /* box-sizing: border-box; */
+    border: 1px solid rgba(0, 0, 0, 0.117);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px 10px 20px;
+    background-color: rgba(5, 5, 5, 0.967);
+    box-shadow: 0px 0px 10px black;
+    transition: 1s ease;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+ 
+}
+
+.firstcont h1{
+    font-family: 'Courier New', Courier, monospace;
+    /* text-shadow: 2px 2px 5px #b0b018; */
+}
+
+.firstcont p {
+    line-height: 1.6; /* Adjust the value as needed */
+    font-size: 18px;
+    color: white;
+  }
+
+.secondcont{
+    border: 1px solid rgba(0, 0, 0, 0.117);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px 10px 20px;
+    background-color: rgba(100, 100, 100, 0.456);
+    box-shadow: 0px 0px 10px black;
+    transition: 1s ease;
+}
+.thirdcont{
+    border: 1px solid rgba(0, 0, 0, 0.117);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px 10px 20px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px black;
+    transition: 1s ease;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(225, 225, 225);
+}
+
+ul li{
+    margin-bottom: 10px; /* Adjust the value as needed */
+}
+
+.firstcont:hover,.secondcont:hover,.thirdcont:hover,.lastcont:hover{
+    transform: scale(1.02);
+}
+
+.lastcont{
+    border: 1px solid rgba(0, 0, 0, 0.117);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px 10px 20px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px black;
+    transition: 1s ease;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(225, 225, 225);
+}
+
+.lastcont button{
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+a{
+    color: rgb(36, 182, 255);
+}
+
+
+
+/* CSS */
+button {
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+button:hover {
+  background-color: #c6c6c6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+button:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+
+button:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+button:focus {
+  outline: 1px transparent;
+}
+
+button:before {
+  display: none;
+}
+
+button:-webkit-details-marker {
+  display: none;
+}

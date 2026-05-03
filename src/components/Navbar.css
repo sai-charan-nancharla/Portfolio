@@ -1,0 +1,79 @@
+.nav{
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(6, 6, 6);
+    font-family: sans-serif;
+    color: white;
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+}
+.nav-item{
+    text-decoration: none; 
+    padding: 10px 20px 15px 20px;
+    transition: 1s ease;
+    /* margin: 3px; */
+    font-size: large;
+    color: aliceblue;
+    position: relative;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background-color: rgb(250, 248, 248); /* Choose your underline color */
+    transition: width 0.5s ease;
+}
+
+.nav-item:hover{
+    transform: scale(1.05);
+    /* background-color: rgba(218, 218, 218, 0.207); */
+    cursor: pointer;
+    /* border-radius: 30px; */
+    /* border: 1px solid; */
+}
+
+.nav-item:hover::after {
+    width: 100%; /* Expand the underline to full width */
+}
+
+.nav-item:active{
+    background-color: rgba(255, 255, 255, 0.317);
+    border-radius: 30px;
+}
+
+.name-title{
+    position:relative;
+    margin-top: 10rem;
+    left: 20rem;
+    justify-content: center;
+}
+
+.name-title h1{
+    overflow: hidden;
+    border-right: .10em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(29,end),
+    blink-caret .75s step-end infinite;
+
+}
+
+@keyframes typing{
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+@keyframes blink-caret{
+    from,to {border-color:transparent}
+    50% {border-color: orange;}
+}

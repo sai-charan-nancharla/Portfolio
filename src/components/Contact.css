@@ -1,0 +1,211 @@
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    margin-top: 50px;
+    align-self: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.internal-card {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 20px;
+    font-family: sans-serif;
+    padding: 10px;
+
+}
+
+.form-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid rgb(60, 60, 60);
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 300ms;
+}
+
+.form-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.reach-out-box {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 5px solid;
+    border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1; /* Rainbow gradient */
+}
+
+.font-light {
+    color: #000000;
+    transition: all 300ms;
+    text-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    animation: stretchAnimation 1.5s ease-in-out infinite;
+    margin-left: 30px;
+}
+
+
+
+.field {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.label-title{
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input {
+    height: 30px;
+    width: 95%;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    border-bottom: 2.5px solid #000000;
+    /* Initial bottom border */
+    transition: border-bottom-color 0.3s ease-in-out, width 0.3s ease-in-out;
+    /* Smooth transition for the border color and width */
+    outline: none;
+    /* Remove default outline */
+}
+
+input:focus {
+    border-bottom-color: #f82004;
+    /* Change the border color on focus */
+    outline: none;
+    /* Ensure there's no outline on focus */
+    box-shadow: none;
+    /* Prevent any shadow on focus */
+}
+
+/* Animation for the bottom border to expand from the center */
+input:focus::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    width: 0;
+    background: #007bff;
+    transition: width 0.4s ease-in-out, left 0.4s ease-in-out;
+}
+
+input:focus::before {
+    width: 100%;
+    left: 0;
+}
+
+.text-area {
+    height: 100px;
+    /* Adjust height as needed */
+    width: 95%;
+    background: transparent;
+    border: 2px solid #04040486;
+    /* Initial bottom border */
+    transition: border-bottom-color 0.3s ease-in-out, width 0.3s ease-in-out;
+    /* Smooth transition */
+    outline: none;
+    /* Remove default outline */
+    resize: none;
+    /* Disable resizing if needed */
+    padding: 5px 0;
+    /* Adjust for some spacing at the top */
+    font-size: 16px;
+    /* Adjust font size as per requirement */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.text-area:focus {
+    border-color: #0015ff;
+    /* Change bottom border color on focus */
+    outline: none;
+    /* Remove default outline */
+    box-shadow: none;
+    /* Prevent any shadow on focus */
+}
+
+/* Animation for the bottom border to expand from the center */
+.text-area:focus::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    width: 0;
+    background: #007bff;
+    transition: width 0.4s ease-in-out, left 0.4s ease-in-out;
+}
+
+.text-area:focus::before {
+    width: 100%;
+    left: 0;
+}
+
+.submit-button {
+    width: 50%;
+    height: 40px;
+    margin-left: 23%;
+    background-color: #000000;
+    color: aliceblue;
+    box-shadow: 0 0 10px#3b3b3b;
+}
+
+.submit-button:hover {
+    background-color: #000000; /* Keep the same background color */
+    color: aliceblue; /* Keep the same text color */
+    box-shadow: 0 0 15px #3b3b3b; /* Optional: Slightly increase shadow on hover */
+}
+.submit-button:active{
+    background-color: #454545;
+}
+
+
+
+/* CSS */
+.button-85 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    width: 50%;
+    height: 40px;
+    margin-left: 23%;
+}
+
+
+
+@keyframes stretchAnimation {
+    0% {
+        transform: translateY(-7px);
+        opacity: 1;
+      }
+    
+      50% {
+        transform: translateY(7px);
+        opacity: 1;
+      }
+    
+      100% {
+        transform: translateY(-7px);
+        opacity: 1;
+      }
+}

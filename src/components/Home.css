@@ -1,0 +1,137 @@
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* Stack children vertically */
+    /* height: 200px; */
+    width: 700px;
+    /* Width of the card */
+    border-radius: 20px;
+    border-color: rgba(20, 20, 20, 0.51);
+    background-color: rgba(11, 11, 11, 0.789);
+    overflow: hidden;
+    margin-top: 12rem;
+    margin: 12rem auto;
+    /* Center card horizontally */
+    padding: 20px;
+    transition: 1s ease;
+}
+
+.card:hover {
+    border: 1px solid rgb(247, 247, 245);
+    transform: scale(1.1) translateY(-3px);
+    box-shadow: 0 10px 10px rgb(25, 25, 25);
+}
+
+.name-title {
+    position: relative;
+    left: 0;
+    display: flex;
+    /* Use flexbox */
+    justify-content: center;
+    /* Center title horizontally */
+    width: 100%;
+    /* Full width */
+    margin: 0;
+    /* Remove margin */
+    margin-top: 30px;
+}
+
+.name-title h1 {
+    font-family: sans-serif;
+    font-weight: 600;
+    overflow: hidden;
+    color: aliceblue;
+    border-right: .10em solid orange;
+    white-space: nowrap;
+    margin: 0;
+    /* Ensure no margin */
+    letter-spacing: .15em;
+    animation: typing 4.5s steps(29, end), blink-caret 0.8s step-end infinite;
+}
+
+.tagline {
+    margin-top: 20px;
+    color: azure;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    position: absolute;
+    margin-top: -150px;
+    margin-left: 39%;
+    border: 1px solid;
+    border-radius: 40px;
+    padding: 10px 15px 8px 15px;
+    background-color: white;
+    border: 6px solid black;
+    /* Animation for stretching effect */
+    overflow: hidden; 
+    animation: stretchAnimation 1.5s ease-in-out infinite;
+    box-shadow: 0 0 10px black;
+}
+
+.profiles {
+
+    /* filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); */
+    transition: 1s ease;
+    cursor: pointer;
+    color: black;
+}
+
+.profiles:hover {
+    transform: scale(1.3);
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.979));
+}
+
+.footer{
+    position: relative;  /* Use relative positioning */
+    margin: 0 auto;     /* Center horizontally if needed */
+    bottom: 0;          /* Align to the bottom of its container */
+    text-align: center;
+}
+
+/* For typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+
+/* For social */
+@keyframes stretchAnimation {
+    0% {
+      transform: scaleX(0); /* Start with 0 width */
+      opacity: 0; /* Invisible at the beginning */
+    }
+    50% {
+      transform: scaleX(1.2); /* Slightly over-stretch */
+      opacity: 1; /* Fully visible */
+    }
+    100% {
+      transform: scaleX(1); /* Normal size */
+      opacity: 1; /* Fully visible */
+    }
+  }
