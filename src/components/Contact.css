@@ -209,3 +209,26 @@ input:focus::before {
         opacity: 1;
       }
 }
+
+@media (max-width: 768px) {
+    .field {
+        width: 100%;
+    }
+    .form-card {
+        padding: 15px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .submit-button, .button-85 {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .reach-out-box {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .font-light {
+        margin-left: 0;
+    }
+}

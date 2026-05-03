@@ -77,3 +77,16 @@
     from,to {border-color:transparent}
     50% {border-color: orange;}
 }
+
+@media (max-width: 768px) {
+    .nav {
+        flex-wrap: wrap;
+        padding: 5px;
+        justify-content: center;
+        gap: 5px;
+    }
+    .nav-item {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+}

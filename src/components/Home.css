@@ -135,3 +135,34 @@
       opacity: 1; /* Fully visible */
     }
   }
+
+@media (max-width: 768px) {
+    .card {
+        width: 85%;
+        margin-top: 8rem;
+        margin-bottom: 4rem;
+        padding: 20px;
+    }
+    .name-title h1 {
+        font-size: 1.2rem;
+        white-space: normal;
+        animation: none;
+        border-right: none;
+        text-align: center;
+    }
+    .tagline {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    .social {
+        position: relative;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: max-content;
+        gap: 20px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        left: 0;
+    }
+}

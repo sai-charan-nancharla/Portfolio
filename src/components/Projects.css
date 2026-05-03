@@ -142,3 +142,39 @@ body{
 .project-git a:hover {
     background-color: #1c86ee; /* Darker background on hover */
 }
+
+@media (max-width: 768px) {
+    .slider {
+        left: 0;
+        top: 0;
+        margin-top: 5rem;
+    }
+    .item {
+        left: calc(50% - 150px);
+    }
+    #prev {
+        left: 10px;
+        padding: 5px;
+        font-size: xx-large;
+    }
+    #next {
+        right: 10px;
+        padding: 5px;
+        font-size: xx-large;
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        width: 250px;
+        height: auto;
+        min-height: 400px;
+        left: calc(50% - 145px);
+    }
+    .img-class {
+        width: 250px;
+    }
+    #prev, #next {
+        font-size: x-large;
+    }
+}
